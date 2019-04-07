@@ -1,5 +1,8 @@
 /* Write an application that that ask the user to enter two integers, obtains
 them from the user and prints their sum, produc, difference and quotient(division). */
+// Adding nother case to this class: Compare two integer and display the large
+// number followed by the words "is larger". If the numbers are iqual, print the
+// message "These numbers are iqual".
 
 import java.util.Scanner; // uses Scanner class to get user input
 
