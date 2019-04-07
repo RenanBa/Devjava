@@ -20,7 +20,10 @@ public class Arithmetic
         System.out.print( "Enter the second integer: " );
         number2 = input.nextInt(); // read second number from user
 
-        System.out.printf( "The sum is %d\n", ( number1 + number2 ) );
-        
+        System.out.printf( "The sum is %d\n", ( number1 + number2 ) ); // sum
+        System.out.printf( "The product is %d\n", ( number1 * number2 ) ); // product
+        System.out.printf( "The difference is %d\n", ( number1 - number2 ) ); // difference
+        System.out.printf( "The quotient is %d\n", ( number1 / number2 ) ); // quotient
+
       }
   }
