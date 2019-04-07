@@ -39,10 +39,12 @@ public class Exemplos
         System.out.printf( "value of %d + %d is %d\n", x, x, ( x + x ) ); // output: value of 2 + 2 is 4
         System.out.printf( "x =" ); // output: x =
         System.out.printf( "%d = %d\n", ( x + y ), (y + x ) ); // output: 5 = 5
+        System.out.println( "*\n**\n***\n****\n******" );
+        System.out.printf( "%s\n%s\n%s\n", "*", "***", "*****" );
         */
 
 
-
+        /*
         // Display shapes box, oval, arrow, and a diamond with asterisk
         System.out.printf( "%s\n", "*********     ***       *        *" );
         System.out.printf( "%s\n", "*       *   *     *    ***      * *" );
@@ -53,6 +55,24 @@ public class Exemplos
         System.out.printf( "%s\n", "*       *  *       *    *      *   *" );
         System.out.printf( "%s\n", "*       *   *     *     *       * *" );
         System.out.printf( "%s\n", "*********     ***       *        *" );
+        */
+
+
+        // Print the value of A B C a b c 0 1 2 $ * + / and the blank character
+        System.out.printf( "The character %c has the value %d\n", 'A', ( ( int ) 'A' ) );
+        System.out.printf( "The character %c has the value %d\n", 'B', ( ( int ) 'B' ) );
+        System.out.printf( "The character %c has the value %d\n", 'C', ( ( int ) 'C' ) );
+        System.out.printf( "The character %c has the value %d\n", 'a', ( ( int ) 'a' ) );
+        System.out.printf( "The character %c has the value %d\n", 'b', ( ( int ) 'b' ) );
+        System.out.printf( "The character %c has the value %d\n", 'c', ( ( int ) 'c' ) );
+        System.out.printf( "The character %c has the value %d\n", '0', ( ( int ) '0' ) );
+        System.out.printf( "The character %c has the value %d\n", '1', ( ( int ) '1' ) );
+        System.out.printf( "The character %c has the value %d\n", '2', ( ( int ) '2' ) );
+        System.out.printf( "The character %c has the value %d\n", '$', ( ( int ) '$' ) );
+        System.out.printf( "The character %c has the value %d\n", '*', ( ( int ) '*' ) );
+        System.out.printf( "The character %c has the value %d\n", '+', ( ( int ) '+' ) );
+        System.out.printf( "The character %c has the value %d\n", '/', ( ( int ) '/' ) );
+        System.out.printf( "The character %c has the value %d\n", ' ', ( ( int ) ' ' ) );
 
 
     } // method main end
