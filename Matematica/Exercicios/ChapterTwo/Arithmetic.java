@@ -5,7 +5,7 @@ them from the user and prints their sum, produc, difference and quotient(divisio
 // number followed by the words "is larger". If the numbers are iqual, print the
 // message "These numbers are iqual".
 
-// Adding another case to this class: Write an application that reads two integers
+// Adding another case to this class: Write an application that reads an integers
 // and determines and prints whether it's odd or even
 
 import java.util.Scanner; // uses Scanner class to get user input
@@ -34,6 +34,7 @@ public class Arithmetic
         System.out.printf( "The difference is %d\n", ( number1 - number2 ) ); // difference
         System.out.printf( "The quotient is %d\n", ( number1 / number2 ) ); // quotient
 
+
         // section to compare two numbers if it is equal or larger
         if ( number1 == number2 )
           System.out.print( "These numbers are iqual \n" ); // compare it numbers are iqual
@@ -43,7 +44,7 @@ public class Arithmetic
 
         if ( number1 < number2 )
           System.out.printf ( "%d is larger \n", number2 ); // compare if number2 is larger than number 1
-        
+
 
         // odd or even section
         System.out.println( "Odd or Even section" );
