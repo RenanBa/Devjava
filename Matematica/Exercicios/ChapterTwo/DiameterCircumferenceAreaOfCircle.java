@@ -11,8 +11,14 @@ public class DiameterCircumferenceAreaOfCircle
     {
       // r = radius; diameter = 2r; PI = value of PI; circumference = 2PIr
 
+      float r; // store users radius
+
+      Scanner input = new Scanner( System.in );
+
+      System.out.println( "Enter a radius value: " ); // prompt
+      r = input.nextInt(); // store radius
 
 
-      System.out.println( System.in ).nextInt();
+      System.out.printf( "the diameter of %d * %f is %f\n", 2, r, ( 2 * r ) );
     }
   }
