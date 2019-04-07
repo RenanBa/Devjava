@@ -14,11 +14,13 @@ public class Arithmetic
         int number1; // first number to add
         int number2; // second number to add
 
-        System.out.print( "Enter the first integer: ");
+        System.out.print( "Enter the first integer: " );
         number1 = input.nextInt(); // read first number from user
 
-        System.out.print( "Enter the second integer: ");
+        System.out.print( "Enter the second integer: " );
         number2 = input.nextInt(); // read second number from user
 
+        System.out.printf( "The sum is %d\n", ( number1 + number2 ) );
+        
       }
   }
