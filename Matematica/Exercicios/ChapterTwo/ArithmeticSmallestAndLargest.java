@@ -1,7 +1,7 @@
 /*
  Write an application that input three integers from the user and display the sum,
- avarage, product, smallest and largest of the numbers. The calculation of the
- avarage in this exercise should result in an integer representation of the avarage
+ average, product, smallest and largest of the numbers. The calculation of the
+ average in this exercise should result in an integer representation of the average
 */
 
 import java.util.Scanner; // import scanner class
@@ -33,7 +33,7 @@ public class ArithmeticSmallestAndLargest
       // calculat and print the product of three integers
       System.out.printf( "The product is %d\n", ( number1 * number2 * number3 ) );
 
-      // calculate and print the avarage of the three numbers
-      System.out.printf( "The avarage these numbers is %d\n", sum/3 );
+      // calculate and print the average of the three numbers
+      System.out.printf( "The average these numbers is %d\n", sum/3 );
     }
   }
