@@ -21,7 +21,7 @@ public class BodyMassIndexCalculator
     System.out.println( "" ); // add line to separate
 
     // print the BMI multiplied by 10000 to remove zeros before comma
-    System.out.printf( "You BMI is: %f\n", ( weight / ( heightCm * heightCm ) ) * 10000 );
+    System.out.printf( "Your BMI is: %f\n", ( weight / ( heightCm * heightCm ) ) * 10000 );
 
     System.out.println( "" ); // add line to separate
 
