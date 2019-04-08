@@ -16,3 +16,5 @@ Repositorios para guardar exemplos
 * [Arithmetic2](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/ArithmeticSmallestAndLargest.java)
   - product of three integers
   - average of the three integers
+[Table of Squares and Cubers](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/TableSquareCube.java)
+ - basic, from 0 to 10
