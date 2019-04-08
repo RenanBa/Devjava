@@ -18,3 +18,4 @@ Repositorios para guardar exemplos
   - average of the three integers
 * [Table of Squares and Cubers](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/TableSquareCube.java)
   - basic, from 0 to 10
+* [Body Mass Index Calculator](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/BodyMassIndexCalculator.java)
