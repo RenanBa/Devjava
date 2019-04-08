@@ -83,7 +83,5 @@ public class Arithmetic
 
         if ( ( number1 % number2 ) != 0 )
           System.out.println( "The numbers are NOT multiples" );
-
-
       }
   }
