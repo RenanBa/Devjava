@@ -18,8 +18,19 @@ public class BodyMassIndexCalculator
     System.out.println( "Enter your hight in cm: " ); // prompt
     heightCm = input.nextInt(); // store input
 
+    System.out.println( "" ); // add line to separate
+
     // print the BMI multiplied by 10000 to remove zeros before comma
-    System.out.printf( "Body mass is %f\n", ( weight / ( heightCm * hightCm ) ) * 10000 );
+    System.out.printf( "You BMI is: %f\n", ( weight / ( heightCm * heightCm ) ) * 10000 );
+
+    System.out.println( "" ); // add line to separate
+
+    // Information from the Department of Health and Human Services/National Instituition of Health
+    System.out.printf( "%s\n", "BMI VALUES" );
+    System.out.printf( "Underweight: %s", "\t less than 18.5\n" );
+    System.out.printf( "Normal: %s", "\t between 18.5 and 24.9\n" );
+    System.out.printf( "Overweight: %s", "\t between 25 and 29.9\n" );
+    System.out.printf( "Obese: %s", "\t\t 30 or greater\n" );
 
   }
 }
