@@ -28,3 +28,8 @@ Repositorios para guardar exemplos
 * [Java JFrame](https://github.com/RenanBa/Devjava/blob/master/CreationWindowJavaJFrame.java)
 * [GUI](https://github.com/RenanBa/Devjava/tree/master/GUI)
   - JOptionPane
+* [TestClass](https://github.com/RenanBa/Devjava/tree/master/TestClass)
+  - call Account class with AccountTest class
+  - private modifier
+  - double (floating-point)
+  - constructor (initializer)
