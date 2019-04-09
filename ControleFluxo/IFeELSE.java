@@ -2,7 +2,8 @@
 
 import java.util.Scanner;
 
-public class Imposto {
+// Classe calcula imposto de acorde com o valor do salario
+public class IFeELSE {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
