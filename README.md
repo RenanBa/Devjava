@@ -32,4 +32,4 @@ Repositorios para guardar exemplos
   - call Account class with AccountTest class
   - private modifier
   - double (floating-point)
-  - constructor (initializer)
+  - constructor
