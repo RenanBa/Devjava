@@ -19,3 +19,10 @@ Repositorios para guardar exemplos
 * [Table of Squares and Cubers](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/TableSquareCube.java)
   - basic, from 0 to 10
 * [Body Mass Index Calculator](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/BodyMassIndexCalculator.java)
+* [ControleFluxo](https://github.com/RenanBa/Devjava/tree/master/ControleFluxo)
+-[WHILE](https://github.com/RenanBa/Devjava/blob/master/ControleFluxo/ControleFluxoWhile.java)
+ - [DO with WHILE](https://github.com/RenanBa/Devjava/blob/master/ControleFluxo/ControleFluxoDoWhile.java)
+ - [Switch](https://github.com/RenanBa/Devjava/blob/master/ControleFluxo/ControleFluxoSwitch.java)
+* [Java JFrame](https://github.com/RenanBa/Devjava/blob/master/CreationWindowJavaJFrame.java)
+* [Calculate tax](https://github.com/RenanBa/Devjava/blob/master/IFeELSE.java)
+ - Using if, else and for loop
