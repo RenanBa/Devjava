@@ -14,7 +14,6 @@ public class HeartRate
 {
   private String firstName; // user's first nane
   private String lastName; // user's last name
-  private int hRate; // user's heart rate
   private int dayBirth; // user's day of birth
   private int monthBirth; // user's month of birth
   private int yearBirth; // user's year of birth
@@ -25,77 +24,71 @@ public class HeartRate
   private int age; // to store user's age
 
   // constructor
-  public class HeartRate( firstN, lastN, rate, day, month, year )
+  public HeartRate( String firstN, String lastN, int day, int month, int year )
   {
     // initiates attributes
     firstName = firstN;
     lastName = lastN;
-    hRate = rate;
     dayBirth = day;
     monthBirth = month;
     yearBirth = year;
     age = 2019 - yearBirth; // calculates user's age
     maxRate = calcRate - age; // calculates max heat rate
-    maxTargetRate = maxRate * 0.85; // calculates target maximum rate
-    lowTargetRate = maxRate * 0.5; // calculates target low rate
+    // divided max and low target rate by 100 to reduce zeros
+    maxTargetRate = ( maxRate * 85 ) / 100; // calculates target maximum rate
+    lowTargetRate = ( maxRate * 50 ) / 100; // calculates target low rate
   } // end of constructor
 
   // calculates and returns maximum heart rate
   public int getMaxRate()
   {
-    return maxRate
+    return maxRate;
   }
 
   // calculates and returns target heart rate
   public int getMaxTargetRate()
   {
-    return maxTargetRate
+    return maxTargetRate;
   }
 
   // calculates and returns target heart rate
   public int getLowTargetRate()
   {
-    return lowTargetRate
+    return lowTargetRate;
   }
 
   // calculates and returns age, only the year
-  public int getAgeYear()
+  public int getAge()
   {
     return age;
   }
 
   // method to set the user's firstName
-  public void setFirstName( fName )
+  public void setFirstName( String fName )
   {
     firstName = fName; // store first name
   } // end of setFirstName
 
   // method to set the user's firstName
-  public void setLastName( lName )
+  public void setLastName( String lName )
   {
     lastName = lName; // store last name
   } // end of setLastName
 
-  // method to set the user's hRate
-  public void setHRate( heartR )
-  {
-    hRate = heartR; // store heart rate
-  } // end of setHRate
-
   // method to set the user's dayBirth
-  public void setDayBirth( bDay )
+  public void setDayBirth( int bDay )
   {
     dayBirth = bDay; // store day of birth
   } // end of setDayBirth
 
   // method to set the user's monthBirth
-  public void setMonthBirth( bMonth )
+  public void setMonthBirth( int bMonth )
   {
     monthBirth = bMonth; // store month of birth
   } // end of setMonthBirth
 
   // method to set the user's yearBirth
-  public void setMonthBirth( bYear )
+  public void setYearBirth( int bYear )
   {
     yearBirth = bYear; // store year of birth
   } // end of yearBirth
@@ -112,12 +105,6 @@ public class HeartRate
     return lastName; // returns last name
   } // end of getLastName
 
-  // method to get the user's hRate
-  public int getHRate()
-  {
-    return hRate ; // return heart rate
-  } // end of getHRate
-
   // method to get the user's dayBirth
   public int getDayBirth()
   {
@@ -131,9 +118,9 @@ public class HeartRate
   } // end of getMonthBirth
 
   // method to get the user's yearBirth
-  public int getMonthBirth()
+  public int getYearBirth()
   {
     return yearBirth; // return year of birth
-  } // end of getMonthBirth
+  } // end of getYearBirth
 
 } // end of HeartRate class
