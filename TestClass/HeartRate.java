@@ -29,6 +29,78 @@ public class HeartRate
     dayBirth = day;
     monthBirth = month;
     yearBirth = year;
-  }
+  } // end of constructor
+
+  // method to set the user's firstName
+  public void setFirstName( fName )
+  {
+    firstName = fName; // store first name
+  } // end of setFirstName
+
+  // method to set the user's firstName
+  public void setLastName( lName )
+  {
+    lastName = lName; // store last name
+  } // end of setLastName
+
+  // method to set the user's hRate
+  public void setHRate( heartR )
+  {
+    hRate = heartR; // store heart rate
+  } // end of setHRate
+
+  // method to set the user's dayBirth
+  public void setDayBirth( bDay )
+  {
+    dayBirth = bDay; // store day of birth
+  } // end of setDayBirth
+
+  // method to set the user's monthBirth
+  public void setMonthBirth( bMonth )
+  {
+    monthBirth = bMonth; // store month of birth
+  } // end of setMonthBirth
+
+  // method to set the user's yearBirth
+  public void setMonthBirth( bYear )
+  {
+    yearBirth = bYear; // store year of birth
+  } // end of yearBirth
+
+  // method to get the user's firstName
+  public String getFirstName()
+  {
+    return firstName; // returns first name
+  } // end of getFirstName
+
+  // method to get the user's firstName
+  public String getLastName()
+  {
+    return lastName; // returns last name
+  } // end of getLastName
+
+  // method to get the user's hRate
+  public int getHRate()
+  {
+    return hRate ; // return heart rate
+  } // end of getHRate
+
+  // method to get the user's dayBirth
+  public int getDayBirth()
+  {
+    return dayBirth; // return day of birth
+  } // end of getDayBirth
+
+  // method to get the user's monthBirth
+  public int getMonthBirth()
+  {
+    return monthBirth; // return month of birth
+  } // end of getMonthBirth
+
+  // method to get the user's yearBirth
+  public int getMonthBirth()
+  {
+    return yearBirth; // return year of birth
+  } // end of getMonthBirth
 
 }
