@@ -5,11 +5,15 @@ import java.util.Scanner;
 
 public class HeartRateTest
 {
-  public static void main ( String[] args )
+  public static void main( String[] args )
   {
     HeartRate person1 = new HeartRate( "Renan", "Souza", 6, 1, 1987 );
 
-    System.out.println( person1.getFirstName() );
+    System.out.printf( "Your name is: %s %s\n", person1.getFirstName(), person1.getLastName() );
+    System.out.printf( "Your age is: %s\n", person1.getAge() );
+    System.out.printf( "Your Max rate is %s\n", person1.getMaxRate() );
+    System.out.printf( "Your target rate is beteewn %d and %d\n", person1.getLowTargetRate(), person1.getMaxTargetRate() );
+
   }
 }
 

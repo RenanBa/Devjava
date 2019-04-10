@@ -34,8 +34,9 @@ public class HeartRate
     yearBirth = year;
     age = 2019 - yearBirth; // calculates user's age
     maxRate = calcRate - age; // calculates max heat rate
-    maxTargetRate = maxRate * 85; // calculates target maximum rate
-    lowTargetRate = maxRate * 5; // calculates target low rate
+    // divided max and low target rate by 100 to reduce zeros
+    maxTargetRate = ( maxRate * 85 ) / 100; // calculates target maximum rate
+    lowTargetRate = ( maxRate * 50 ) / 100; // calculates target low rate
   } // end of constructor
 
   // calculates and returns maximum heart rate
@@ -57,7 +58,7 @@ public class HeartRate
   }
 
   // calculates and returns age, only the year
-  public int getAgeYear()
+  public int getAge()
   {
     return age;
   }
