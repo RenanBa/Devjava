@@ -28,8 +28,12 @@ Repositorios para guardar exemplos
 * [Java JFrame](https://github.com/RenanBa/Devjava/blob/master/CreationWindowJavaJFrame.java)
 * [GUI](https://github.com/RenanBa/Devjava/tree/master/GUI)
   - JOptionPane
-* [TestClass](https://github.com/RenanBa/Devjava/tree/master/TestClass)
-  - call Account class with AccountTest class
-  - private modifier
-  - double (floating-point)
-  - constructor (initializer)
+* [TestClass]
+  - [Account](https://github.com/RenanBa/Devjava/blob/master/TestClass/Account.java)
+  - [AccountTest](https://github.com/RenanBa/Devjava/blob/master/TestClass/AccountTest.java)
+    - double (floating-point)
+  - [HeartRate](https://github.com/RenanBa/Devjava/blob/master/TestClass/HeartRate.java)
+  - [HeartRateTest](https://github.com/RenanBa/Devjava/blob/master/TestClass/HeartRateTest.java)
+    - private modifier
+    - get and set methods
+    - input.nextLine()
