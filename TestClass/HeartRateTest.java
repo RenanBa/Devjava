@@ -1,14 +1,35 @@
 // Test class to test HeatRate class
 // firstN, lastN, day, month, year
 
-import java.util.Scanner;
+import java.util.Scanner; // import Scanner class
 
 public class HeartRateTest
 {
+  // main method begins the program
   public static void main( String[] args )
   {
-    HeartRate person1 = new HeartRate( "Renan", "Souza", 6, 1, 1987 );
+    // create Scanner to obtain input from windows
+    Scanner input = new Scanner( System.in );
 
+    System.out.print( "Enter your first name: "); // prompt
+    String fName = input.nextLine(); // store first name
+
+    System.out.print( "Enter your last name: "); // prompt
+    String lName = input.nextLine(); // store last name
+
+    System.out.print( "Enter your day of birth: "); // prompt
+    int day = input.nextInt(); // store day of birth
+
+    System.out.print( "Enter your month of birth: "); // prompt
+    int month = input.nextInt(); // store month of birth
+
+    System.out.print( "Enter your year of birth: "); // prompt
+    int year = input.nextInt(); // store year of birth
+
+    // instantiate HeartRate class with user's attributes
+    HeartRate person1 = new HeartRate( fName, lName, day, month, year );
+
+    // call first name, last name, age, max heart rate and target heat rate get methods and print
     System.out.printf( "Your name is: %s %s\n", person1.getFirstName(), person1.getLastName() );
     System.out.printf( "Your age is: %s\n", person1.getAge() );
     System.out.printf( "Your Max rate is %s\n", person1.getMaxRate() );
@@ -16,14 +37,3 @@ public class HeartRateTest
 
   }
 }
-
-// private String firstName; // user's first nane
-// private String lastName; // user's last name
-// private int dayBirth; // user's day of birth
-// private int monthBirth; // user's month of birth
-// private int yearBirth; // user's year of birth
-// private int calcRate = 220; // set the Rate to calculates ueser's heart rates
-// private int maxRate; // to store maximum heart rate
-// private int maxTargetRate; // to store target heart rate
-// private int lowTargetRate; // to store target heart rate
-// private int age; // to store user's age
