@@ -5,7 +5,7 @@
 // The class also should [returns the person's maximum heart rate] and a method
 // that calculates and [returns the person's targer heart rate]. Write a Java
 // application that prompts for the person's information, instantiate an object
-// of class HeartRates nad print the information from that object then calculates
+// of class HeartRates and print the information from that object then calculates
 // the person's age in year. maximum heart rate and target-heart-rate range.
 // 220 minus your age in year is the formula for maximum heart rate
 // Targer hear rate is 50% to 85% of your maximum heart rate
@@ -18,6 +18,11 @@ public class HeartRate
   private int dayBirth; // user's day of birth
   private int monthBirth; // user's month of birth
   private int yearBirth; // user's year of birth
+  private int calcRate = 220; // set the Rate to calculates ueser's heart rates
+  private int maxRate; // to store maximum heart rate
+  private int maxTargetRate; // to store target heart rate
+  private int lowTargetRate; // to store target heart rate
+  private int age; // to store user's age
 
   // constructor
   public class HeartRate( firstN, lastN, rate, day, month, year )
@@ -29,7 +34,35 @@ public class HeartRate
     dayBirth = day;
     monthBirth = month;
     yearBirth = year;
+    age = 2019 - yearBirth; // calculates user's age
+    maxRate = calcRate - age; // calculates max heat rate
+    maxTargetRate = maxRate * 0.85; // calculates target maximum rate
+    lowTargetRate = maxRate * 0.5; // calculates target low rate
   } // end of constructor
+
+  // calculates and returns maximum heart rate
+  public int getMaxRate()
+  {
+    return maxRate
+  }
+
+  // calculates and returns target heart rate
+  public int getMaxTargetRate()
+  {
+    return maxTargetRate
+  }
+
+  // calculates and returns target heart rate
+  public int getLowTargetRate()
+  {
+    return lowTargetRate
+  }
+
+  // calculates and returns age, only the year
+  public int getAgeYear()
+  {
+    return age;
+  }
 
   // method to set the user's firstName
   public void setFirstName( fName )
@@ -103,4 +136,4 @@ public class HeartRate
     return yearBirth; // return year of birth
   } // end of getMonthBirth
 
-}
+} // end of HeartRate class
