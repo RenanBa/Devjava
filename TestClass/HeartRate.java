@@ -14,7 +14,6 @@ public class HeartRate
 {
   private String firstName; // user's first nane
   private String lastName; // user's last name
-  private int hRate; // user's heart rate
   private int dayBirth; // user's day of birth
   private int monthBirth; // user's month of birth
   private int yearBirth; // user's year of birth
@@ -25,12 +24,11 @@ public class HeartRate
   private int age; // to store user's age
 
   // constructor
-  public class HeartRate( firstN, lastN, rate, day, month, year )
+  public class HeartRate( firstN, lastN, day, month, year )
   {
     // initiates attributes
     firstName = firstN;
     lastName = lastN;
-    hRate = rate;
     dayBirth = day;
     monthBirth = month;
     yearBirth = year;
