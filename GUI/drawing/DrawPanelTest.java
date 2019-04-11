@@ -6,6 +6,9 @@ public class DrawPanelTest
   public static void main( String[] args )
   {
     // create a panel that contains our drawing
+    DrawPanel panel = new DrawPanel();
+
+    // create a frame to hold the panel
     JFrame application = new JFrame();
 
     // set the frame to exit when it is closed
