@@ -6,7 +6,7 @@ public class DrawWithLoopTest
     public static void main( String[] args )
     {
         // create a panel that contains our drawing
-        DrawPanel panel = new DrawPanel();
+        DrawWithLoop panel = new DrawWithLoop();
 
         // create a frame to hold the panel
         JFrame application = new JFrame();
@@ -18,4 +18,4 @@ public class DrawWithLoopTest
         application.setSize( 250, 250 ); // set the size of the frame
         application.setVisible( true ); // make the frame visible
     } // end main
-} // end DrawPanelTest
+} // end DrawWithLoopTest
