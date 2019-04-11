@@ -16,6 +16,7 @@ Repositorios para guardar exemplos
 * [Arithmetic2](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/ArithmeticSmallestAndLargest.java)
   - product of three integers
   - average of the three integers
+  - [prefix and postfix increment operators example](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterFour/Increment.java)
 * [Table of Squares and Cubers](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/TableSquareCube.java)
   - basic, from 0 to 10
 * [Body Mass Index Calculator](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/ChapterTwo/BodyMassIndexCalculator.java)
@@ -26,9 +27,15 @@ Repositorios para guardar exemplos
 * [Calculate tax](https://github.com/RenanBa/Devjava/blob/master/IFeELSE.java)
   - Using if, else and for loop
 * [Java JFrame](https://github.com/RenanBa/Devjava/blob/master/CreationWindowJavaJFrame.java)
-* [GUI](https://github.com/RenanBa/Devjava/tree/master/GUI)
-  - JOptionPane
-* [TestClass]
+* GUI
+  - [JOptionPane](https://github.com/RenanBa/Devjava/blob/master/GUI/NameDialog.java)
+  - [DrawPanel](https://github.com/RenanBa/Devjava/tree/master/GUI/drawing)
+    - java.awt.Graphics
+    - javax.swing.JPanel
+    - javax.swing.JFrame
+    - paintComponent
+    - getWidth / getHeight
+* TestClass
   - [Account](https://github.com/RenanBa/Devjava/blob/master/TestClass/Account.java)
   - [AccountTest](https://github.com/RenanBa/Devjava/blob/master/TestClass/AccountTest.java)
     - double (floating-point)
