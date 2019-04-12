@@ -14,19 +14,25 @@ public class DrawWithLoop extends JPanel
         int width = getWidth(); // total width
         int height = getHeight(); // total height
         int lines = 15; // total numbers of lines
-        int x = 250;
-        int y = 1;
+        int x = height; // to draw from top-left to lower-right
+        int y = 0; // to draw from top-left to lower-right
+        int angles = height / lines; // create angles
 
-        // creates 14 lines in an angle
-        while ( lines > 1 )
+
+        // creates 14 lines in an angle from upper-left to righg and bottom
+        while ( lines >= 1 )
         {
+          y = y + angles; // add angles to y
+          x = x - angles; // subtract angles from x
+
+          // draw a line frm the upper-left to the lower-right
           g.drawLine( 0, 0, x , y );
 
-          y = y + 17;
-          x = x - 17;
+          // draw a curve grid
+          // g.drawLine( 0, x, y, 0 );
+
           lines -= 1;
         }
-
 
         // draw a line from the lower-left to the upper-right
         // g.drawLine( 0, height, width, 0 );
