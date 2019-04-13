@@ -37,11 +37,12 @@ import java.util.Scanner;
 public class GasMileage
 {
   // initialize variables
-  private int tankCapacity = 0;
+  private float tankCapacity = 0;
   private int milesDriven = 0;
   private int usedGalons = 0;
-  private int milesPerGallon = 0;
+  private float milesPerGallon = 0;
   private int tripCounter = 0;
+  private int miles = 0;
 
   // constructor
   // public GasMileage( fullTank )
@@ -55,17 +56,31 @@ public class GasMileage
     // Create a scanner to obtain input from command window
     Scanner input = new Scanner( System.in );
 
-    System.out.print( "Enter tank capacity" ); // prompt
-    tankCapacity = input.nextInt(); // inpute tank capacity
-    System.out.print( "Enter miles driven or -1 to quit" ); // prompt
-    milesDriven = input.nextInt(); // inpute miles driven
+    System.out.println( "Enter tank capacity" ); // prompt
+    tankCapacity = input.nextFloat(); // inpute tank capacity
+    System.out.print( "Enter miles driven or -1 to quit: " ); // prompt
+    miles = input.nextInt(); // inpute miles
+    // System.out.printf( "Miles driven: %d", miles );
 
     // loop unitl sentinel value is read from user
-    while( mileDriven != -1 )
+    while( miles != -1 )
     {
-      System.out.print( "Miles driven: \n\n" ); // prompt
-      milesDriven += input.nextInt(); // inpute miles driven
-    }
+      milesDriven += miles; // add miles into miles driven
+      System.out.print( "Enter miles driven or -1 to quit: " ); // prompt
+      miles = input.nextInt(); // inpute miles
+      tripCounter += 1;
+    } // end while
 
-  }
-}
+    // if user has at least entered one trip
+    if ( tripCounter != 0 )
+    {
+      // calculate total miles driven divided total full tank used
+      milesPerGallon = ( float ) milesDriven / ( tankCapacity * tripCounter );
+      System.out.printf( "Total gallons used: %.2f\n", ( tankCapacity * tripCounter ) );
+      System.out.printf( "Total miles driven: %d\n", milesDriven );
+      System.out.printf( "Miles per gallon: %.2f\n", milesPerGallon );
+    } // end if
+    else // no trip were entered
+      System.out.print( "No trip were entered." );
+  } // end method calculateGasMileage
+} // end of GasMileage

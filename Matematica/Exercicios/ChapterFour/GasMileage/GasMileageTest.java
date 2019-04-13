@@ -2,7 +2,7 @@
 
 public class GasMileageTest
 {
-  public static void main( String[] args );
+  public static void main( String[] args )
   {
     // create GasMileage object
     GasMileage gasMileage = new GasMileage();
