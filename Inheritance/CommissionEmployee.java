@@ -61,7 +61,7 @@ public class CommissionEmployee
     if ( sales >= 0.0 )
       grossSales = sales;
     else
-      throw new IllegalArgumentExpectation( "Gross sales must be >= 0.0" );
+      throw new IllegalArgumentException( "Gross sales must be >= 0.0" );
   } // end method setGrossSales
 
   // return gross sales amount
@@ -76,7 +76,7 @@ public class CommissionEmployee
     if ( rate > 0.0 && rate < 1.0 )
       commissionRate = rate;
     else
-      throw new IllegalArgumentExpectation( "Commission rate must be > 0.0 and < 1.0" );
+      throw new IllegalArgumentException( "Commission rate must be > 0.0 and < 1.0" );
   } // end method setCommissionRate
 
   // return commission rate

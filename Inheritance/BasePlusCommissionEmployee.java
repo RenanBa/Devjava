@@ -19,7 +19,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
     if ( salary >= 0.0 )
       baseSalary = salary;
     else
-      throw new IllegalArgumentExpectation( "Base salary must be >= 0.0" );
+      throw new IllegalArgumentException( "Base salary must be >= 0.0" );
   } // end method setBaseSalary
 
   // return base salary
@@ -39,7 +39,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
   @Override // indicates that this method overrides a superclass method
   public String toString()
   {
-    return String.format( "%s %s\n%s: %.2f", "base-salaried",
-      super.toString(), "base salary", getBaseSalary() );
+    return String.format( "%s %s\n%s: %.2f", "base-salaried", super.toString(),
+      "base salary", getBaseSalary() );
   } // end method toString
 } // end class BasePlusCommissionEmployee
