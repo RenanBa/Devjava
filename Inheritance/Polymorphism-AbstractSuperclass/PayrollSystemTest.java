@@ -14,7 +14,7 @@ public class PayrollSystemTest
 
         System.out.printf( "%s\n%s: $%,.2f\n\n", salariedEmployee, "earned", salariedEmployee.earnings() );
         System.out.printf( "%s\n%s: $%,.2f\n\n", hourlyEmployee, "earned", hourlyEmployee.earnings() );
-        System.out.printf( "%s\n%s: $%,.2f\n\n", comissionEmployee, "earned", comissionEmployee.earnings() );
+        System.out.printf( "%s\n%s: $%,.2f\n\n", commissionEmployee, "earned", commissionEmployee.earnings() );
         System.out.printf( "%s\n%s: $%,.2f\n\n", basePlusCommissionEmployee, "earned", basePlusCommissionEmployee.earnings() );
 
         // create four-element Employee array
@@ -37,7 +37,7 @@ public class PayrollSystemTest
             if ( currentEmployee instanceof BasePlusCommissionEmployee )
             {
                 // downcast Employee reference to BasePlusCommissionEmployee reference
-                BasePlusCommissionEmployee employee = ( BaePlusCommissionEmployee ) currentEmployee;
+                BasePlusCommissionEmployee employee = ( BasePlusCommissionEmployee ) currentEmployee;
 
                 employee.setBaseSalary( 1.10 * employee.getBaseSalary() );
 
@@ -49,6 +49,6 @@ public class PayrollSystemTest
 
         // get type name of each object in employee array
         for ( int j = 0; j < employees.length; j++ )
-            System.out.print( "Employee %d is a %s\n", j, employees[ j ].getClass().getName() );
+            System.out.printf( "Employee %d is a %s\n", j, employees[ j ].getClass().getName() );
     } // end main
 } // end class

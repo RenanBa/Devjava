@@ -18,7 +18,7 @@ public class CommissionEmployee extends Employee
         if ( rate > 0.0 && rate < 1.0 )
             commissionRate = rate;
         else
-            throw IllegalArgumentException( "Commission rate must be > 0.0 and < 1.0" );
+            throw new IllegalArgumentException( "Commission rate must be > 0.0 and < 1.0" );
     } // end method setCommission
 
     // set gross sale amount
@@ -26,7 +26,7 @@ public class CommissionEmployee extends Employee
         if ( sales >= 0.0 )
             grossSales = sales;
         else
-            throw IllegalArgumentException( "Gross sales must be >= 0.0" );
+            throw new IllegalArgumentException( "Gross sales must be >= 0.0" );
     } // end method setGrossSales
 
     // return gross sales amount

@@ -17,7 +17,7 @@ public class HourlyEmployee extends Employee
         if ( hourlyWage >= 0.0 )
             wage = hourlyWage;
         else
-            throw IllegalArgumentException( "Hourly wage must be >= 0.0" );
+            throw new IllegalArgumentException( "Hourly wage must be >= 0.0" );
     } // end method setWage
 
     public double getWage()
@@ -30,7 +30,7 @@ public class HourlyEmployee extends Employee
         if ( ( hoursWorked >= 0.0 ) && ( hoursWorked <= 168.0 ) )
             hours = hoursWorked;
         else
-            throw IllegalArgumentException( "Hours worked must be >= 0.0 and <= 168" );
+            throw new IllegalArgumentException( "Hours worked must be >= 0.0 and <= 168" );
     }   // end method setHours
 
     public double getHours()

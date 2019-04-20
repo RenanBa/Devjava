@@ -4,17 +4,18 @@ public class SalariedEmployee extends Employee
 {
     private double weeklySalary;
 
+
     // four argument constructor
-    public SalariedEmployee( String first, String last, String ssn, double weeklySalary)
+    public SalariedEmployee( String first, String last, String ssn, double weeklySalary )
     {
-        super( first, last, snn );
+        super( first, last, ssn );
         this.weeklySalary = weeklySalary;
     }
 
-    public void setWeeklySalary(double salary)
+    public void setWeeklySalary( double salary )
     {
         if ( salary >= 0.0 )
-            baseSalary = salary;
+            weeklySalary = salary;
         else
             throw new IllegalArgumentException( "Weekly salary must be >= 0.0" );
     } // end method setWeeklySalary
