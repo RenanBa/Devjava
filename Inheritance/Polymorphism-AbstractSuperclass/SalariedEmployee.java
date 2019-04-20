@@ -5,7 +5,7 @@ public class SalariedEmployee extends Employee
     private double weeklySalary;
 
     // four argument constructor
-    public SalariedEmployee(double weeklySalary)
+    public SalariedEmployee( String first, String last, String ssn, double weeklySalary)
     {
         super( first, last, snn );
         this.weeklySalary = weeklySalary;
