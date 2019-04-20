@@ -25,7 +25,7 @@ public class BasePlusCommissionEmployee extends CommissionEmployee
     {
         return baseSalary;
     } // end method getBaseSalary
-    
+
     // calculate earnings; override method earnings in CommissionEmpoyee
     @Override
     public double earnings()
