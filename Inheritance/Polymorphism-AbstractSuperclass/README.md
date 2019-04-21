@@ -9,4 +9,4 @@
 5. Indirect concrete subclass (BasePlusCommissionEmployee)
 
 Employee Payroll application UML:
-![alt text](https://github.com/RenanBa/Devjava/tree/master/Images/employeeDiageam.png)
+![alt text](https://github.com/RenanBa/Devjava/blob/master/Images/employeeDiagram.png)
