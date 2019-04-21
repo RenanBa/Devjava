@@ -1,9 +1,9 @@
-Payroll System using Polymorphism
-Topics:
-Inheritance
-Polymorphism
+## Payroll System using Polymorphism
+*Topics:*
+1. Inheritance
+2. Polymorphism
   - polymorphic Processing, Operator instanceof and Downcasting (PayrollSystemTest)
     - downcast Employee reference to BasePlusCommissionEmployee reference
-Abstract classes and methods (Employee)
-Concrete subclasses
-Indirect concrete subclass (BasePlusCommissionEmployee)
+3. Abstract classes and methods (Employee)
+4. Concrete subclasses
+5. Indirect concrete subclass (BasePlusCommissionEmployee)
