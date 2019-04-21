@@ -50,6 +50,8 @@ Repositorios para guardar exemplos
     - Down Cast
     - instanceof - Reflection
     - getClass().getName()
+    - class implemented
+    - interface
 * [Craps game](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/Craps.java)
 * [Roll dice](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/RollDie.java)
 * [Enumerable class](https://github.com/RenanBa/Devjava/tree/master/TestClass/ChapterEight)
