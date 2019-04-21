@@ -1,6 +1,6 @@
 // Invoice class that implements Payable
 
-public class implements Payable
+public class Invoice implements Payable
 {
     private String partNumber;
     private String partDescription;
@@ -12,7 +12,7 @@ public class implements Payable
     {
         partNumber = part;
         partDescription = description;
-        setQuality( count ); // validate and store quantity
+        setQuantity( count ); // validate and store quantity
         setPricePerItem( price ); // validate and store price per item
     } // end constructor
 
@@ -46,11 +46,11 @@ public class implements Payable
         if ( count >= 0 )
             quantity = count;
         else
-            throw new IllegalArgumentException( "Quantiy must be >= 0 " )''
+            throw new IllegalArgumentException( "Quantiy must be >= 0 " );
     } // end method setQuantity
 
     // get quantity
-    public String getQuantity()
+    public int getQuantity()
     {
         return quantity;
     }
@@ -65,7 +65,7 @@ public class implements Payable
     } // end method setPricePerItem
 
     // get price per item
-    public String getPricePerItem()
+    public double getPricePerItem()
     {
         return pricePerItem;
     }
@@ -74,7 +74,7 @@ public class implements Payable
     @Override
     public String toString()
     {
-        return String.format( "$s: \n%s: %s (%s) \n%s: %d \n%s: $%,.2f", "invoice", "part number",
+        return String.format( "%s: \n%s: %s (%s) \n%s: %d \n%s: $%,.2f", "invoice", "part number",
             getPartNumber(), getPartDescription(), "quantity", getQuantity(), "price per item", getPricePerItem() );
     } // end method toString
 
