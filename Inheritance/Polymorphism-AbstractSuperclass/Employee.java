@@ -1,6 +1,6 @@
 // Employee abstract superclass.
-
-public abstract class Employee {
+// update Employee class to implements Payable
+public abstract class Employee implements Payable {
   private String firstName;
   private String lastName;
   private String socialSecurityNumber;
@@ -51,6 +51,14 @@ public abstract class Employee {
             getFirstName(), getLastName(), getSocialSecurityNumber() );
   } // end method toString
 
-  // abstract method override by concrete subclasses
-  public abstract double earnings(); // no implemented here
+  /*
+    // Now useing getPaymentAmount so remove earnings()
+
+    // abstract method override by concrete subclasses
+    public abstract double earnings(); // no implemented here
+  */
+
+  // Note: We do not implement Payable method getPaymentAuount here so
+  // this class must be declared abstract to avoid a compilation error
+
 } // end class Employee

@@ -24,12 +24,22 @@ public class SalariedEmployee extends Employee
         return weeklySalary;
     } // end method getWeeklySalary
 
+    /* Change earnings method for getPaymentAmount()
+
     // calculate earnings; override abstract method earning in Employee
     @Override
     public double earnings()
     {
         return getWeeklySalary();
     } // end method earnings
+    */
+
+    // calculate earnings; implement interface Payable method that was abstract in superclass Employee
+    @Override
+    public double getPaymentAmount()
+    {
+        return getWeeklySalary();
+    } // wns method getPaymentAmount
 
     // return String representation of SalariedEmployee object
     @Override
