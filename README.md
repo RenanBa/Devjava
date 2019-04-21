@@ -45,13 +45,12 @@ Repositorios para guardar exemplos
     - get and set methods
     - input.nextLine()
 * [Inheritance](https://github.com/RenanBa/Devjava/tree/master/Inheritance)
-  - [Polymorphism](https://github.com/RenanBa/Devjava/tree/master/Inheritance/Polymorphism-AbstractSuperclass)
-    - Abstract class
-    - Down Cast
-    - instanceof - Reflection
-    - getClass().getName()
-    - class implemented
-    - interface
+  - Abstract class
+  - Down Cast
+  - instanceof - Reflection
+  - getClass().getName()
+  - class implemented
+  - interface
 * [Craps game](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/Craps.java)
 * [Roll dice](https://github.com/RenanBa/Devjava/blob/master/Matematica/Exercicios/RollDie.java)
 * [Enumerable class](https://github.com/RenanBa/Devjava/tree/master/TestClass/ChapterEight)
