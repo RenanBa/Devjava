@@ -7,3 +7,6 @@
 3. Abstract classes and methods (Employee)
 4. Concrete subclasses
 5. Indirect concrete subclass (BasePlusCommissionEmployee)
+
+Employee Payroll application UML:
+![alt text](https://github.com/RenanBa/Devjava/tree/master/Images/employeeDiageam.png)
