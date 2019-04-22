@@ -20,7 +20,7 @@ public class ATM
     public ATM()
     {
         useAuthenticated = false; // user is not authenticated to start
-        currentAccountNumber - 0; // no current number to start
+        currentAccountNumber = 0; // no current number to start
         screen = new Screen(); // create scree
         keypad = new Keypad(); // create keypad
         cashDispenser = new CashDispenser(); // create cash dispenser
@@ -135,7 +135,7 @@ public class ATM
                 temp = new Deposit( currentAccountNumber, screen, bankDatabase, keypad, depositSlot );
                 break;
         } // end switch
+        
+        return temp; // return the newly created object
     } // end method createTransaction
-
-    return temp; // return the newly created object
 } // end class ATM
