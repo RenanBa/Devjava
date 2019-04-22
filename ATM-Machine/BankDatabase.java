@@ -34,7 +34,7 @@
 
          // if account exists, return result of Account method validatePIN
          if ( userAccount != null )
-            return userAccount.validatePIN( userPIN )
+            return userAccount.validatePIN( userPIN );
          else
              return false; // account number not found, so return false
      } // end method authenticateUser

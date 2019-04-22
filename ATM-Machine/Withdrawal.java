@@ -69,7 +69,7 @@ public class Withdrawal extends Transaction
                 {
                     screen.displayMessageLine(
                             "\nInsufficient funds in your account." +
-                            "\n\nPlease choose a smaller amount." )
+                            "\n\nPlease choose a smaller amount." );
                 } // end else
             } // end if
             else // user chose cancel menu option
