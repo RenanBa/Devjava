@@ -78,7 +78,7 @@ public class Withdrawal extends Transaction
                 return; // return to main menu because user canceled
             } // end else
         } while ( !cashDispensed );
-        
+
     } // end method execute
 
     // display a menu of withdrawal amounts and the option to cancel

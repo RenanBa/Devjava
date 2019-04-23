@@ -33,5 +33,5 @@ public abstract class Transaction
     }
 
     // abstract method overridden by subclasses
-    public abstract void execute();
+    abstract public void execute();
 } // end class Transaction

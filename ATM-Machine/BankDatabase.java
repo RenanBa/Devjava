@@ -18,7 +18,7 @@
          for ( Account currentAccount : accounts )
          {
              // return currete account is match found
-             if ( currentAccount.getAccountNumber() == accountNumber )
+             if ( currentAccount.getAccountNumber() == accountNumber ) // NEED TO RESOLVE ACCOUNT NUMBER ISSUE THAT RETURNS NOTHING
                  return currentAccount;
          } // end for
 
@@ -43,7 +43,7 @@
      public double getAvailableBalance( int userAccountNumber )
      {
          return getAccount( userAccountNumber ).getAvailableBalance();
-     } // end metjhod getAvailableBalance
+     } // end method getAvailableBalance
 
      // return total balance of Account with specified account number
      public double getTotalBalance( int userAccountNumer )
