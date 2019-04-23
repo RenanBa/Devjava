@@ -2,7 +2,7 @@
 
 public class ATM
 {
-    private boolean useAuthenticated; // whether user is authenticated
+    private boolean userAuthenticated; // whether user is authenticated
     private int currentAccountNumber; // current user's account number
     private Screen screen; // ATM's screen
     private Keypad keypad; // ATM's keypad
@@ -19,13 +19,13 @@ public class ATM
     // no-argumetn ATM constructor initialize instance variables
     public ATM()
     {
-        useAuthenticated = false; // user is not authenticated to start
+        userAuthenticated = false; // user is not authenticated to start
         currentAccountNumber = 0; // no current number to start
         screen = new Screen(); // create scree
         keypad = new Keypad(); // create keypad
         cashDispenser = new CashDispenser(); // create cash dispenser
         depositSlot = new DepositSlot(); // create deposit slot
-        bankDatabase = BankDatabase(); // create acct info database
+        bankDatabase = new BankDatabase(); // create acct info database
     } // end ATM constructor
 
     // start ATM
@@ -38,11 +38,11 @@ public class ATM
             while ( userAuthenticated )
             {
                 screen.displayMessageLine( "\nWelcome!" );
-                authenticatUser(); // authenticate user
+                authenticateUser(); // authenticate user
             } // end while
 
             performTransactions(); // user is now authenticated
-            useAuthenticated = false; // reset before next ATM session
+            userAuthenticated = false; // reset before next ATM session
             currentAccountNumber = 0; // reset before next ATM session
             screen.displayMessageLine( "\nThank you! Goodbye" );
         } // end while
@@ -60,7 +60,7 @@ public class ATM
         userAuthenticated = bankDatabase.authenticateUser( accountNumber, pin );
 
         // check whether authentication succeeded
-        if ( useAuthenticated )
+        if ( userAuthenticated )
         {
             currentAccountNumber = accountNumber; // save user's account #
         }
@@ -107,7 +107,7 @@ public class ATM
     } // end method performTransaction
 
     // display the main menu and return an input selection
-    private int displayMessage()
+    private int displayMainMenu()
     {
         screen.displayMessageLine( "\nMain menu:" );
         screen.displayMessageLine( "1 - View my balance" );
@@ -135,7 +135,7 @@ public class ATM
                 temp = new Deposit( currentAccountNumber, screen, bankDatabase, keypad, depositSlot );
                 break;
         } // end switch
-        
+
         return temp; // return the newly created object
     } // end method createTransaction
 } // end class ATM

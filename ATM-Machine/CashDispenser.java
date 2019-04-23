@@ -15,7 +15,7 @@ public class CashDispenser
     // simulates dispensing of specified amount of cash
     public void dispenseCash( int amount )
     {
-        int billsRequired = aumount / 20; // number of $20 bills required
+        int billsRequired = amount / 20; // number of $20 bills required
         count -= billsRequired; // update the count of bills
     } // end method dispenseCash
 
