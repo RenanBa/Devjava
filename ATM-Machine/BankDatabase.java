@@ -7,8 +7,8 @@
      // no-argument BankDtabase constructor initializes accounts
      public BankDatabase(){
          accounts = new Account[ 2 ]; // just 2 accounts for testing
-         account[ 0 ] = new Account( 12345, 54321, 1000.0, 1200.0 );
-         account[ 1 ] = new Account( 98765, 56789, 200.0, 200.0 );
+         accounts[ 0 ] = new Account( 12345, 54321, 1000.0, 1200.0 );
+         accounts[ 1 ] = new Account( 98765, 56789, 200.0, 200.0 );
      } // end no-argument BankDatabase constructor
 
      // retrieve Account object containing specified account number
@@ -18,7 +18,7 @@
          for ( Account currentAccount : accounts )
          {
              // return currete account is match found
-             if ( currentAccount.getAccountNumber() == accountNumber )
+             if ( currentAccount.getAccountNumber() == accountNumber ) // NEED TO RESOLVE ACCOUNT NUMBER ISSUE THAT RETURNS NOTHING
                  return currentAccount;
          } // end for
 
@@ -42,8 +42,8 @@
      // return available balance of Account with specified account number
      public double getAvailableBalance( int userAccountNumber )
      {
-         return getAccount( userAccountNumber ).getAvailaBalance();
-     } // end metjhod getAvailableBalance
+         return getAccount( userAccountNumber ).getAvailableBalance();
+     } // end method getAvailableBalance
 
      // return total balance of Account with specified account number
      public double getTotalBalance( int userAccountNumer )

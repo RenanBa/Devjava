@@ -3,7 +3,7 @@
 public class Withdrawal extends Transaction
 {
     // attributes
-    private double amount; // amount to withdraw
+    private int amount; // amount to withdraw
     private Keypad keypad; // reference to keypad
     private CashDispenser cashDispenser; // reference to cash dispenser
 
@@ -27,7 +27,7 @@ public class Withdrawal extends Transaction
     @Override
     public void execute()
     {
-        boolean cashDispenser = false; // cash was not dispensed yet
+        boolean cashDispensed = false; // cash was not dispensed yet
         double availableBalance; // amount available for withdrawal
 
         // get reference to bank database and scree
@@ -77,7 +77,8 @@ public class Withdrawal extends Transaction
                 screen.displayMessageLine( "\nCanceling transaction..." );
                 return; // return to main menu because user canceled
             } // end else
-        } while ( !cashDispenser );
+        } while ( !cashDispensed );
+
     } // end method execute
 
     // display a menu of withdrawal amounts and the option to cancel
