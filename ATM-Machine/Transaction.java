@@ -9,10 +9,6 @@ public abstract class Transaction
     // Transaction contructor invoked by subclass using super()
     public Transaction( int UserAccountNumber, Screen atmScreen, BankDatabase atmBankDatabase )
     {
-
-        System.out.println( "in Transaction constructor method - UserAccountNumber: " ); // debugging
-        System.out.println( UserAccountNumber );
-
         accountNumber = UserAccountNumber;
         screen = atmScreen;
         bankDatabase = atmBankDatabase;
