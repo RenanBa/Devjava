@@ -35,7 +35,7 @@ public class ATM
         while ( true )
         {
             // loop while user is not uet authenticated
-            while ( userAuthenticated )
+            while ( !userAuthenticated )
             {
                 screen.displayMessageLine( "\nWelcome!" );
                 authenticateUser(); // authenticate user
@@ -53,7 +53,7 @@ public class ATM
     {
         screen.displayMessage( "\nPlease enter your account number: " );
         int accountNumber = keypad.getInput(); // input account number
-        screen.displayMessage( "\nRnyrt yout PIN: "); // prompt for PIN
+        screen.displayMessage( "\nEnter yout PIN: "); // prompt for PIN
         int pin = keypad.getInput(); // input PIN
 
         // set userAuthenticated to boolean value ruturned by database
